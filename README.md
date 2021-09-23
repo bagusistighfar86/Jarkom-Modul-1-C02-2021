@@ -74,11 +74,17 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 ## Jawaban
 src port 80
 
+[![11.png](https://i.postimg.cc/RVs8r5HG/11.png)](https://postimg.cc/Cz8JD2Jf)
+
+
 # 12
 ## Soal
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 ## Jawaban
 port 21
+
+[![12.png](https://i.postimg.cc/HW3v5DBH/12.png)](https://postimg.cc/F1dx56Mn)
+
 
 # 13
 ## Soal
@@ -86,11 +92,17 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 ## Jawaban
 dst port 443
 
+[![13.png](https://i.postimg.cc/kGhyHCpb/13.png)](https://postimg.cc/p5z89wxW)
+
+
 # 14
 ## Soal
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
 ## Jawaban
 dst host kemenag.go.id
+
+[![14.png](https://i.postimg.cc/KYrD2BWF/14.png)](https://postimg.cc/sBxhPQy0)
+
 
 # 15
 ## Soal
