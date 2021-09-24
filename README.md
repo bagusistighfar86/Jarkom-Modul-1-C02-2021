@@ -119,7 +119,7 @@ Pilih paket dan follow TCP Stream, ubah show data menjadi raw lalu save menjadi 
 
 ## Cara
 Masukkan password yang didapat dari bukanapaapa.txt lalu file wanted.pdf akan terbuka seperti berikut.
-[![10b.png](https://i.postimg.cc/90dBWk1x/10b.png)](https://postimg.cc/ctJ3hXpY)
+[![10c.png](https://i.postimg.cc/Qt1YvJtz/10c.png)](https://postimg.cc/r0y9rW5G)
 
 
 # 11
