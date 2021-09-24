@@ -10,7 +10,9 @@
 ## Soal
 Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
 ## Jawaban
-http.host == "ichimarumaru.tech"
+Filter = `http.host == "ichimarumaru.tech"`
+## Cara
+Pilih salah satu yang didapat lalu follow TCP Stream untuk melihat servernya.
 
 [![1.png](https://i.postimg.cc/PJxmkcGn/1.png)](https://postimg.cc/wyCtXwTw)
 
@@ -19,7 +21,9 @@ http.host == "ichimarumaru.tech"
 ## Soal
 Temukan paket dari web-web yang menggunakan basic authentication method!
 ## Jawaban
-http.authbasic
+Filter = `http.authbasic`
+## Cara
+Masukkan filter dan paket sudah langsung tampil.
 
 [![2.png](https://i.postimg.cc/QxvcR00v/2.png)](https://postimg.cc/8jBFvB8b)
 
@@ -70,7 +74,9 @@ ftp && frame contains user
 ## Soal
 Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
 ## Jawaban
-frame contains “Real.pdf
+filter = `frame contains “Real.pdf`
+## Cara
+Pilih salah satu paket lalu follow TCP Stream ubah show data menjadi Raw dan simpan Real.pdf.
 
 [![7.png](https://i.postimg.cc/zfz64CDZ/7.png)](https://postimg.cc/gx7gZ66N)
 
@@ -88,7 +94,9 @@ ftp-data.command == RETR
 ## Soal
 Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
 ## Jawaban
-ftp-data.command contains "secret.zip"
+filter = `ftp-data.command contains "secret.zip"`
+## Cara
+Pilih salah satu paket lalu follow TCP Stream ubah show data menjadi Raw dan simpan secret.zip. Setelah dibuka terdapat file wanted.pdf yang membutuhkan password.
 
 [![9.png](https://i.postimg.cc/3NmtkNrF/9.png)](https://postimg.cc/fSWcFw9V)
 
@@ -97,16 +105,20 @@ ftp-data.command contains "secret.zip"
 ## Soal
 Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
 ## Jawaban
-ftp-data.command contains "history.txt"
-
+filter = `ftp-data.command contains "history.txt"`
+## Cara
+Pilih paket dan follow TCP Stream dan akan muncul text yang menunjukkan bukanapaapa.txt
 [![10a.png](https://i.postimg.cc/hj7rYvmR/10a.png)](https://postimg.cc/G8dG8czX)
 
-
+## Jawaban
 ftp-data.command contains "bukanapaapa.txt"
+## Cara
+Pilih paket dan follow TCP Stream, ubah show data menjadi raw lalu save menjadi bukanapaapa.txt. Buka file tersebut maka akan muncul password untuk file wanted.pdf pada secret.zip.
 
 [![10b.png](https://i.postimg.cc/90dBWk1x/10b.png)](https://postimg.cc/ctJ3hXpY)
 
-
+## Cara
+Masukkan password yang didapat dari bukanapaapa.txt lalu file wanted.pdf akan terbuka seperti berikut.
 [![10b.png](https://i.postimg.cc/90dBWk1x/10b.png)](https://postimg.cc/ctJ3hXpY)
 
 
