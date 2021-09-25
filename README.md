@@ -32,7 +32,7 @@ Masukkan filter dan paket sudah langsung tampil.
 ## Soal
 Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
 ## Jawaban
-Filter = `Frame contains basic`
+c `Frame contains basic`
 ## Cara
 Masukkan filter untuk mencari data yang dikirim atau diterima oleh basic.ichimarumaru.tech, lalu buka get request.  
 Username dan passowrd berada di kolom authorization
@@ -45,7 +45,7 @@ Username dan passowrd berada di kolom authorization
 ## Soal
 Temukan paket mysql yang mengandung perintah query select!
 ## Jawaban
-mysql.query matches select
+Filter = `mysql.query matches select`
 ## Cara
 Masukkan filter dan paket sudah langsung tampil.
 [![4.png](https://i.postimg.cc/63SrLXbb/4.png)](https://postimg.cc/2bQLrPDn)
@@ -55,7 +55,7 @@ Masukkan filter dan paket sudah langsung tampil.
 ## Soal
 Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
 ## Jawaban
-mysql.query matches insert
+Filter = `mysql.query matches insert`
 ## Cara
 Masukkan filter dan buka frame tersebut, disana akan tertulis query insert into yang dapat dipakai menjadi username dan passowrd.
 
@@ -68,8 +68,9 @@ Masukkan filter dan buka frame tersebut, disana akan tertulis query insert into 
 ## Soal
 Cari username dan password ketika melakukan login ke FTP Server!
 ## Jawaban
-ftp && frame contains user
-Pilih salah satu yang didapat lalu follow TCP Stream untuk melihat user dan passoword.
+Filter = `ftp && frame contains user`
+## Cara
+Pilih salah satu yang didapat lalu follow TCP Stream untuk melihat user dan password.
 
 [![6a.png](https://i.postimg.cc/Fz7PNp88/6a.png)](https://postimg.cc/N2v8x6gk)
 
@@ -91,8 +92,9 @@ Pilih salah satu paket lalu follow TCP Stream ubah show data menjadi Raw dan sim
 ## Soal
 Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 ## Jawaban
-ftp-data.command == RETR
-
+Filter = `ftp-data.command == RETR`
+## Cara
+Masukkan filter dan paket sudah langsung tampil tapi di kasus ini tidak ada paket yang tampil karena tidak ada download yang dilakukan.
 [![8.png](https://i.postimg.cc/C5qQbJ7D/8.png)](https://postimg.cc/RJvdB7jV)
 
 
