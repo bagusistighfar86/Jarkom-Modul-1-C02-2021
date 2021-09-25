@@ -32,8 +32,10 @@ Masukkan filter dan paket sudah langsung tampil.
 ## Soal
 Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
 ## Jawaban
-frame contains basic
-
+Filter = `Frame contains basic`
+## Cara
+Masukkan filter untuk mencari data yang dikirim atau diterima oleh basic.ichimarumaru.tech, lalu buka get request.  
+Username dan passowrd berada di kolom authorization
 [![3a.png](https://i.postimg.cc/CKgkKdyN/3a.png)](https://postimg.cc/tsBYSq4Z)
 
 [![3b.png](https://i.postimg.cc/PJP87wZt/3b.png)](https://postimg.cc/n9fzjM05)
@@ -44,7 +46,8 @@ frame contains basic
 Temukan paket mysql yang mengandung perintah query select!
 ## Jawaban
 mysql.query matches select
-
+## Cara
+Masukkan filter dan paket sudah langsung tampil.
 [![4.png](https://i.postimg.cc/63SrLXbb/4.png)](https://postimg.cc/2bQLrPDn)
 
 
@@ -53,6 +56,8 @@ mysql.query matches select
 Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
 ## Jawaban
 mysql.query matches insert
+## Cara
+Masukkan filter dan buka frame tersebut, disana akan tertulis query insert into yang dapat dipakai menjadi username dan passowrd.
 
 [![5a.png](https://i.postimg.cc/fWtjWVkG/5a.png)](https://postimg.cc/8sGrtPR4)
 
@@ -64,6 +69,7 @@ mysql.query matches insert
 Cari username dan password ketika melakukan login ke FTP Server!
 ## Jawaban
 ftp && frame contains user
+Pilih salah satu yang didapat lalu follow TCP Stream untuk melihat user dan passoword.
 
 [![6a.png](https://i.postimg.cc/Fz7PNp88/6a.png)](https://postimg.cc/N2v8x6gk)
 
