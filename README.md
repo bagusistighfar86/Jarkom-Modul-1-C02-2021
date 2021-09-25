@@ -6,6 +6,11 @@
 | Christoffer Ivano   | 05111940000091 |
 | Bayu Adjie Sidharta | 05111940000172 |
 
+# Pembagian Tugas
+1. Muhammad Bagus I : No 11-15
+2. Christoffer Ivano : No 1-5
+3. Bayu Adjie Sidharta : No 6-10
+
 # 1
 ## Soal
 Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
